@@ -1,0 +1,116 @@
+ /* .card{
+    width: 300px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0,1);
+    overflow: hidden;
+    margin: 10px;
+     align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+}
+.card>img{
+    width: 90%;
+    height: 250px;
+}
+*/
+
+
+/* counter */
+
+.counter{
+    font-size: 2rem;
+    width: 400px;
+    border: 1px solid;
+    text-align: center;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 120px;
+    height: 35px;
+    background-color: green;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.choosecolor{
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 30px auto;
+}
+.choosecolor>*{
+    width: 100px;
+}
+.selectcolor{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    color: black;
+    margin: 0px auto;
+}
+
+.Colorbox{
+    font-size: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .25s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tasklist{
+    width: 70vw;
+    margin: auto;
+    border: 1px solid;
+}
+.tasklist> *{
+    list-style: none;    
+}
+
+.tasklist div{
+    width: 80%;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    /* border: 1px solid; */
+    padding: 5px 0;
+}
+.tasklist div input{
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid;
+}
+.tasklist div button{
+    width: 100px;
+    /* height: 30px; */
+    padding: 12px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid;
+}
+
+.tasklist li{
+    width: 80%;
+    margin: auto;
+    background-color: grey;
+    margin-bottom: 5px;
+    padding: 18px 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.tasklist li button{
+    width: 30px;
+    font-size: 1rem;
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+}
