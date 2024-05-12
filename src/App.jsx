@@ -6,14 +6,15 @@ import Counter from "./counter"
 import Component from "./onchange" 
 import Colorpicker from "./Colorpicker"
 import Task from "./tasklist"
+import Car from "./CarProject"
 
 function App() {
 
   return (
     <>
       
-
-    <Task />
+     <Car />
+    {/* <Task /> */}
       {/* <Colorpicker /> */}
       {/* <Component /> */}
       {/* <Counter /> */}

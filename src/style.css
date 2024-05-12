@@ -77,24 +77,24 @@
 
 .tasklist div{
     width: 80%;
-    margin: 20px auto;
+    margin: 15px auto;
     /* border-radius: 10px; */
     /* border: 1px solid; */
     padding: 5px 0;
 }
 .tasklist div input{
-    width: 80%;
+    width: 70%;
     font-size: 1rem;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid;
+    margin-right: 3px;
 }
 .tasklist div button{
-    width: 100px;
+    width: 20%;
     /* height: 30px; */
     padding: 12px;
     border-radius: 10px;
-    margin-left: 10px;
     border: 1px solid;
 }
 
@@ -113,4 +113,39 @@
     float: right;
     margin-right: 20px;
     padding: 5px;
+}
+.taskHeader{
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    color: grey;
+}
+@media screen and (max-width:600px) {
+    .tasklist {
+        width: 100vw;
+        align-items: center;
+    }    
+    .tasklist li{
+        background-color:beige ;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        font-family: cursive;
+    }
+}
+
+/* style for car project */
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;    
+}
+.form>*{
+    margin-top: 5px;
+    padding: 3px 0px;
+}
+
+.listofcar{
+    font-size: 1.4rem;
 }
