@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       
-     <Car />
-    {/* <Task /> */}
+     {/* <Car /> */}
+    <Task />
       {/* <Colorpicker /> */}
       {/* <Component /> */}
       {/* <Counter /> */}

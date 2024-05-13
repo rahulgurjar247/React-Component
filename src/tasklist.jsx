@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 function Task() {
-    const [list, setlist] = useState([]);
-    
+    const [list, setlist] = useState(["rahul gurjar", " aacha to work", "what next"]);
+
     function additem() {
         const val = document.querySelector("#inp").value;
         if (val.length < 10) {
@@ -12,15 +12,15 @@ function Task() {
         setlist(l => [...l, val]);
         document.querySelector("#inp").value = ""
     }
-    function removeitem(e) {
-        setlist(list.filter((_, i) => e.target.id != i));       
+    function removeitem(index) {
+        setlist(list.filter((_, i) => index != i));
     }
     return (
 
         <div className="tasklist">
-            <div className="taskHeader">Your Task List</div>
-            <div>
-                <input type="text" id="inp"/>
+            <h1 className="taskHeader">Your Task List</h1>
+            <div className="inpbox">
+                <input type="text" id="inp" />
                 <button onClick={additem}>Add</button>
             </div>
 
@@ -28,9 +28,11 @@ function Task() {
                 {list.map((item, index) =>
                     <li key={index}>
                         {item}
-                        <button id={index} onClick={() => removeitem(index)}>
-                        X
-                        </button>
+                        <div>
+                            <button id={index} onClick={() => removeitem(index)}>
+                                Delete
+                            </button>
+                        </div>
                     </li>
                 )}
             </ul>
